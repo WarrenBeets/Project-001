@@ -1,0 +1,26 @@
+---
+title: "Markdown_Git_Test"
+author: "Warren Beets"
+date: "02 April 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+This report documents my first attempts at version control of a markdown document in git.
+
+Lets create a test plot of distance (miles) and speed (mph)
+
+```{r, test-plot}
+plot(cars, col = "red", xlab = "speed (mph)", ylab = "distaance (miles)")
+```
+
+A summary of the data is given below
+
+```{r, cars-summary}
+library(knitr)
+kable(summary(cars))
+```
